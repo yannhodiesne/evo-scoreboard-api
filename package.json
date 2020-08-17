@@ -1,0 +1,29 @@
+{
+  "name": "evo-scoreboard-api",
+  "version": "1.0.0-SNAPSHOT",
+  "description": "Node.js read-only API for EvoSC databases",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "mysql",
+    "trackmania",
+    "tm2020"
+  ],
+  "author": "barkbork",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mysql2": "^2.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.7.0",
+    "nodemon": "^2.0.4",
+    "prettier": "^2.0.5"
+  }
+}
