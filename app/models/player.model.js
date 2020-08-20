@@ -3,7 +3,7 @@ const sql = require("./db");
 const Player = {};
 
 Player.findById = playerId => new Promise((resolve, reject) => {
-    sql.query(`SELECT * FROM players LEFT JOIN stats ON id = Player WHERE id = ${sql.escape(playerId)}`, (err, res) => {
+    sql.query(`SELECT p.*, s.* FROM players p LEFT JOIN stats s ON p.id = s.Player WHERE p.id = ${sql.escape(playerId)}`, (err, res) => {
         if (err) {
             console.log("Player.findById : ", err);
             reject(err);

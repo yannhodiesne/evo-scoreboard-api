@@ -3,7 +3,7 @@ const sql = require("./db");
 const Records = {};
 
 Records.findByPlayer = playerId => new Promise((resolve, reject) => {
-    sql.query(`SELECT records.*, map.name AS MapName FROM \`local-records\` records JOIN maps map ON map.id = records.Map WHERE Player = ${sql.escape(playerId)}`, (err, res) => {
+    sql.query(`SELECT records.*, map.name AS MapName FROM \`local-records\` records JOIN maps map ON map.id = records.Map WHERE records.Player = ${sql.escape(playerId)}`, (err, res) => {
         if (err) {
             console.log("Records.findByPlayer : ", err);
             reject(err);
