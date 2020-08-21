@@ -1,6 +1,6 @@
 {
   "name": "evo-scoreboard-api",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Node.js read-only API for EvoSC databases",
   "main": "server.js",
   "scripts": {
