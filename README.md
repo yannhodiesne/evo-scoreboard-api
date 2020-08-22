@@ -7,7 +7,7 @@ A Node.js read-only API for EvoSC databases
 ### Docker image
 
 ```
-docker run barkbork/evo-scoreboard-api -p 3000:80 -e DB_HOST=localhost DB_PORT=3306 DB_USER=db_user DB_PASSWORD=db_password DB_NAME=db_name
+docker run barkbork/evo-scoreboard-api -p 3000:80 -e DB_HOST=localhost -e DB_PORT=3306 -e DB_USER=db_user -e DB_PASSWORD=db_password -e DB_NAME=db_name
 ```
 
 > Don't forget to replace the environment variables with your own values !
