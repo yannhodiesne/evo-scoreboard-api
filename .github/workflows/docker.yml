@@ -10,7 +10,7 @@ jobs:
       with:
         ssh-key: ${{ secrets.GIT_SSH_KEY }}
     - name: "Publish to Docker Hub"
-      uses: elgohr/Publish-Docker-Github-Action@master
+      uses: elgohr/Publish-Docker-Github-Action@v5
       with:
         name: barkbork/evo-scoreboard-api
         username: ${{ secrets.DOCKER_USERNAME }}
